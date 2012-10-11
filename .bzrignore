@@ -1,0 +1,15 @@
+.project
+local.properties
+proguard.cfg
+bin
+gen
+*.class
+libs/android-support-*.jar
+libs/jackson-mini-*.jar
+libs/libGoogleAnalytics.jar
+libs/signpost-commonshttp4-*.jar
+libs/signpost-core-*.jar
+libs/libUbuntuSSO-*.jar
+libs/ubuntuone-files-java-client-*.jar
+libs/libUbuntuOneFiles-*.jar
+proguard-project.txt

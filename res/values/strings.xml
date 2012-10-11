@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+=== Style guide ===
+
+ * "Ubuntu One Files", without "for Android"
+ * "SD card", "Wi-Fi", "E-mail"
+ * Toasts include ending punctuation. Not ellipses.
+ * Join ellipses to nearest text. 
+ * Use verbs in buttons.
+ * Sign in or signing in, verb.
+ * Back up or backing up, verb. Backup, noun or adjective.
+ * Hyphens - are not emdash —. Avoid dash if possible.
+ * 'directory' is technical and used in code. In UI use 'folder', instead.
+
+-->
+<resources>
+    <string name="app_name">Ubuntu One Files</string>
+    <string name="app_version">Version</string>
+    <string name="title_text">Ubuntu One Files</string>
+    <string name="please_wait">Please wait&#8230;</string>
+    
+    
+    <string name="yes">Yes</string>
+    <string name="ok">OK</string>
+    <string name="no">No</string>
+    <string name="cancel">Cancel</string>
+    <string name="create">Create</string>
+    <string name="canceled">Canceled</string>
+    <string name="refreshing">Refreshing</string>
+    <string name="remove">Remove</string>
+    <string name="error_fmt">Error: %s</string>
+    <string name="oops_title">Oops!</string>
+    <string name="oops_message">Something went wrong. We kindly ask you to report the problem.</string>
+    <string name="unknown_error">unknown error</string>
+    <string name="report">Report</string>
+    <string name="ignore">Ignore</string>
+    <string name="no_network">No network.</string>
+    
+    <string name="hint">Hint</string>
+    <string name="empty"></string>
+    
+    
+    <string name="toast.no_network">No network.</string>
+    <string name="toast.working_offline">Working off-line.</string>
+    <string name="toast.cant_rename_to_nothing">Can\'t rename to nothing.</string>
+    <string name="toast.name_cant_be_nothing">Name can\'t be empty.</string>
+    <string name="toast.photos_will_auto_upload_to_fmt">Photos will auto-upload to\n%s</string>
+    <string name="toast.cancelled_selecting_auto_upload_directory">Cancelled selecting auto-upload directory.</string>
+    <string name="toast.file_link_copied">Link copied to clipboard.</string>
+    <string name="toast.already_downloading">Already downloading.</string>
+    <string name="toast.no_change">No change.</string>
+    <string name="toast.cant_handle_file_type">Can\'t handle that file type yet, sorry!</string>
+    <string name="toast.download_to_share">You have to download the file to share it.</string>
+    <string name="toast.no_suitable_activity">No suitable activity found</string>
+    <string name="toast.file_not_cached_anymore">File not cached anymore.</string>
+    <string name="toast.file_name_cant_contain">Name can\'t contain %c.</string>
+    <string name="toast.downloading_x">Downloading %s.</string>
+    <string name="toast.uploaded_x">Uploaded %s.</string>
+    <string name="toast.downloaded_x">Downloaded %s.</string>
+    <string name="toast.storage_is_not_accessible">Can\'t access SD card.</string>
+    <string name="toast.uploading_all_photos">Uploading all photos.</string>
+    <string name="toast.already_uploading">Already uploading&#8230;</string>
+    <string name="toast.no_photos_to_upload">No photos to upload.</string>
+    <string name="toast.started_bg_service">Started background service.</string>
+    <string name="toast.stopped_bg_service">Stopped background service.</string>
+    <string name="toast.failed_to_start_bg_service">Failed to start background service.</string>
+    <string name="toast.retrying_transfers_now">Retrying now&#8230;</string>
+    <string name="toast.retrying_transfers_failed">Retrying failed.</string>
+    <string name="toast.canceled_failed_transfers">Canceled failed transfers</string>
+    <string name="toast.cancel_failed_none">No transfers to cancel.</string>
+    <string name="toast.not_on_wifi">Not on Wi-Fi.</string>
+    <string name="toast.cache_cleared">Cache cleared.</string>
+    
+    
+    <string name="progress.signing_in">Signing in&#8230;</string>
+    <string name="progress.signing_in_to_u1">Signing in to Ubuntu One&#8230;</string>
+    <string name="progress.updating_please_wait">Updating, please wait&#8230;</string>
+    
+    
+    <string name="dialog.no_network_title">No network</string>
+    <string name="dialog.no_network_message">You need Wi-Fi or Mobile network to use Ubuntu One Files.</string>
+    
+    <string name="dialog.pick_image_title">Pick image with</string>
+    <string name="dialog.pick_video_title">Pick video with</string>
+    <string name="dialog.pick_audio_title">Pick audio with</string>
+    <string name="dialog.pick_file_title">Pick file with</string>
+    <string name="dialog.open_with_title">Open with</string>
+    
+    <string name="dialog.checking_size_message">Checking size&#8230;</string>
+    <string name="dialog.nothing_to_download">This folder contains no files. In case of any subfolders, you can download them manually.</string>
+    
+    <string name="dialog.creating_link">Creating link&#8230;</string>
+    
+    <string name="dialog.no_space_title">No space</string>
+    <string name="dialog.no_space_message_fmt">Needs %1$s of free space, you have only %2$s left.</string>
+
+    <string name="dialog.downloading_dir_title">Downloading folder</string>
+    <string name="dialog.downloading_dir_is_x_large">This folder is %s in size.</string>
+    <string name="dialog.downloading_dir_on_mobile">Also, you are using Mobile connection.</string>
+    <string name="dialog.downloading_dir_are_you_sure">Are you sure you want to download it?</string>
+    
+    <string name="dialog.share_link_title">Share link</string>
+    <string name="shared_from_u1">Shared from Ubuntu One</string>
+    
+    <string name="dialog.rename_directory_title">Rename folder</string>
+    
+    <string name="dialog.create_directory_title">Create folder</string>
+    
+    <string name="dialog.delete_item_message">Are you sure you want to delete this item?</string>
+    
+    
+    <string name="dialog.pick_upload_directory_title">Select upload directory</string>
+    <string name="dialog.pick_upload_directory_message">Use the <b>Menu</b> button to confirm or cancel.</string>
+
+    <string name="dialog.auth_failed_title">Login failed</string>
+    <string name="dialog.auth_failed_message">Authentication failed. Please try again.</string>
+    
+    <string name="dialog.time_check_failed_title">Temporary problem</string>
+    <string name="dialog.time_check_failed_message">At the moment we can\'t verify if your device\'s time is correct. Please try again later soon!</string>
+    
+    <string name="dialog.remove_device_title">Remove device from U1</string>
+    <string name="dialog.remove_device_message">If you remove this device, your files will not be removed either locally or remotely (from Ubuntu One).</string>
+    
+    
+    <string name="intro_activity.sign_in">Sign in</string>
+    <string name="intro_activity.new_account">I don\'t have an account</string>
+    
+    <string name="intro_header.1">Your cloud</string>
+    <string name="intro_header.2">Your photos</string>
+    <string name="intro_header.3"></string>
+    <string name="intro_header.4">Getting started</string>
+    
+    <string name="intro_text.1">Store your files, photos and music safely in Ubuntu One and access them from any of your devices, wherever you are. Get 5GB of cloud storage for FREE.</string>
+    <string name="intro_text.2">Snap a photo and it will instantly appear online and on all your devices. Easily share your shots with friends, family, colleagues or on social networks.</string>
+    <string name="intro_text.3">Add more cloud storage when you need it or stream your music online or on your mobile. Music Streaming has 20GB of extra cloud storage built in - try it free for 30 days.</string>
+    <string name="intro_text.4">Go to one.ubuntu.com/download and follow our simple guide to installing Ubuntu One on all your devices. Ubuntu One works on Windows, Android, iOS, Ubuntu, and via the Web.</string>
+    
+    
+    <string name="autoupload_setup_activity.title">Auto Upload setup</string>
+    <string name="autoupload_setup_activity.enable_auto_upload">Enable Auto Upload</string>
+    <string name="autoupload_setup_activity.auto_upload_photos">Automatically upload your photos</string>
+    <string name="autoupload_setup_activity.auto_upload_description">Never lose a photo from your phone again.</string>
+    <string name="autoupload_setup_activity.wifi_or_mobile">Use both Wi-Fi and mobile network</string>
+    <string name="autoupload_setup_activity.wifi_only">Only use Wi-Fi</string>
+    <string name="autoupload_setup_activity.disable">Don\'t upload my photos</string>
+    <string name="autoupload_setup_activity.auto_upload_settings_notice">You can change which folders are uploaded in Settings.</string>
+    <string name="autoupload_setup_activity.auto_upload_mobile_conn_notice">Uploading over a mobile network will use your data connection and may cost you money. You can turn this off at any time in Settings.</string>
+    <string name="autoupload_setup_activity.done">Continue</string>
+    
+    
+    <string name="autoupload_customize_activity.title">Customize auto-upload</string>
+    <string name="autoupload_customize_activity.select_auto_upload_folders">Select folders to Auto Upload</string>
+    <string name="autoupload_customize_activity.rescan">Look for other photo folders…</string>
+    
+    
+    <string name="action_bar.add_image">Add image</string>
+    <string name="action_bar.add_video">Add video</string>
+    <string name="action_bar.add_audio">Add audio</string>
+    <string name="action_bar.add_file">Add file</string>
+    <string name="action_bar.new_directory">New folder</string>
+
+    <string name="files_activity.directory_is_empty">This folder is empty.</string>
+    <string name="files_activity.loading_files">Loading files&#8230;</string>
+    <string name="files_activity.no_files">No files.</string>
+    <string name="files_activity.no_file_selected">No file selected.</string>
+    
+    
+    <string name="context_download">Download</string>
+    <string name="context_cancel_download">Cancel download</string>
+    <string name="context_create_link">Share link</string>
+    <string name="context_share_link">Share link</string>
+    <string name="context_disable_link">Disable link</string>
+    <string name="context_rename">Rename</string>
+    <string name="context_delete">Delete</string>
+    <string name="context_delete_from_device">Delete from device</string>
+    
+    
+    <string name="options_menu.refresh">Refresh</string>
+    <string name="options_menu.preferences">Settings</string>
+    <string name="options_menu.upload_here">Upload here</string>
+    <string name="options_menu.cancel">Cancel</string>
+
+    
+    <string name="node.is_cloud_folder">Cloud folder</string>
+    <string name="node_is_purchased_music">Purchased Music</string>
+    
+    <string name="node.last_modified">last modified %1$s</string>
+    <string name="node.is_downloading">Downloading&#8230;</string>
+    <string name="node.is_uploading">Uploading&#8230;</string>
+    <string name="node_is_deleting">Deleting&#8230;</string>
+    <string name="node_download_has_failed">Download failed, tap to resume.</string>
+    <string name="node_upload_has_failed">Upload failed, tap to retry.</string>
+    
+    <plurals name="node_last_modified_minutes">
+        <item quantity="one">%d minute ago</item>
+        <item quantity="other">%d minutes ago</item>
+    </plurals>
+    <plurals name="node_last_modified_hours">
+        <item quantity="one">%d hour ago</item>
+        <item quantity="other">%d hours ago</item>
+    </plurals>
+    <plurals name="node_last_modified_days">
+        <item quantity="one">%d day ago</item>
+        <item quantity="other">%d days ago</item>
+    </plurals>
+    
+    
+    <string name="store_activity.title">Store</string>
+    <string name="store_activity.could_not_start_storage_purchase_try_again_later">Could not start storage purchase. Please try again later.</string>
+    <string name="store_activity.no_network_to_purchase_storage">No network connection available. Please make sure you are connected and try again.</string>
+
+    
+    <string name="preferences_activity.title">Ubuntu One Files Settings</string>
+    <string name="preferences_activity.unknown_value">unknown</string>
+    <string name="preferences_activity.tap_to_refresh">(tap to refresh)</string>
+    
+    
+    <string name="preferences_activity.category_account">Account</string>
+    
+    <string name="preferences_activity.username_title">User name</string>
+    <string name="preferences_activity.plan_title">Current plan</string>
+    <string name="preferences_activity.bytes_used_summary_fmt">" — used %1$s out of %2$s (%3$.0f%%)"</string>
+    <string name="preferences_activity.please_wait_updating_user_info">Please wait while Ubuntu One updates your user information.</string>
+    <string name="preferences_activity.invite_friend_title">Invite a friend!</string>
+    <string name="preferences_activity.invite_friend_summary">Get additional 500MB of storage</string>
+    <string name="preferences_activity.purchase_storage_title">Upgrade storage</string>
+    <string name="preferences_activity.purchase_storage_summary">Still not enough? Get more 20GB packs!</string>
+    <string name="preferences_activity.upgrade_plan_title">Tell me more</string>
+    <string name="preferences_activity.upgrade_plan_summary">Storage and music streaming plan details</string>
+    
+    <string name="invite_friend.subject">Try Ubuntu One!</string>
+    <!-- <string name="invite_friend.body_fmt">Hi!\n\nI\'m using Ubuntu One to keep my files safe and share them easily, all for free. I thought you might want to give it a try!\n\nUse this link to get additional 500MB to your initial 5GB after you sign up!\n\n%s</string> -->
+    <string name="invite_friend.body_fmt">Hi!\n\nI wanted to let you know that I use Ubuntu One to share and access all my files and photos from multiple devices.\nAn Ubuntu One account gives you 5GB of free cloud storage, if you use this link\n\n%s\n\nyou will get an extra 500MB of free cloud storage when you sign up!\n\nI also want to say thank you, as when you sign up via that link I will also get 500MB of extra free cloud storage!\nIt\'s easy, once you\'re set up you can also take advantage of the Ubuntu One referrals program to earn yourself up to 20GB of free cloud storage by inviting your family and friends.\n\nEnjoy!\n\nTo learn more about Ubuntu One visit https://one.ubuntu.com/\nFor more information about the Ubuntu One referral program see the FAQ https://one.ubuntu.com/help/faq/#account_referrals\n\n</string>
+    <string name="invite_friend.twitter_body_fmt">I\'m using Ubuntu One to store and share my files! Want 5.5GB free cloud storage? Sign up %s</string>
+    
+    
+    <string name="preferences_activity.category_options">Options</string>
+    
+    <string name="preferences_activity.auto_upload_settings_title">Auto Upload settings</string>
+    
+    <string name="preferences_activity.auto_upload_directory_title">Upload directory</string>
+    
+    <string name="preferences_activity.category_photos">Photos</string>
+    <string name="preferences_activity.photo_auto_upload_title">Auto Upload photos</string>
+    
+    <string name="preferences_activity.only_on_wifi_title">Only on Wi-Fi</string>
+    <string name="preferences_activity.only_when_charging_title">Only when charging</string>
+    <string name="preferences_activity.also_when_roaming">Also when roaming</string>
+    <string name="preferences_activity.show_auto_upload_notifications">Show notifications</string>
+    <string name="preferences_activity.photo_auto_upload_directory_title">Upload photos to</string>
+    
+    <string name="preferences_activity.photo_auto_upload_sources_title">Select folders to upload</string>
+    
+    <string name="preferences_activity.upload_all_photos_title">Upload all photos now</string>
+    <string name="preferences_activity.upload_all_photos_message">This will upload all photos from your list of selected folders, which can take some time. Wi-Fi connection is recommended. Continue?</string>
+    <string name="preferences_activity.cancel_all_uploads">Cancel all uploads</string>
+    
+    
+    <string name="preferences_activity.category_general">General</string>
+    <string name="preferences_activity.auto_upload_frequency_title">Auto-upload frequency</string>
+    <string name="preferences_activity.force_upload_now_title">Force upload now</string>
+    
+    <string name="preferences_activity.retry_failed_uploads_title">Retry failed uploads</string>
+    <string name="preferences_activity.retry_failed_uploads_summary_pending">You have pending uploads</string>
+    <string name="preferences_activity.retry_failed_uploads_summary_none">No pending uploads</string>
+    
+    <string name="preferences_activity.cancel_failed_uploads_title">Cancel failed uploads</string>
+    
+    
+    <string name="preferences_activity.advanced_options_title">Advanced options</string>
+    
+    <string name="preferences_activity.avoid_dups_title">Avoid uploading duplicates</string>
+    <string name="preferences_activity.avoid_dups_summary">Upload files only once</string>
+    
+    <string name="preferences_activity.auto_retry_title">"Auto-retry transfers"</string>
+    <string name="preferences_activity.auto_retry_summary">Automatically retry failed transfers</string>
+    
+    <string name="preferences_activity.clear_preview_cache_title">Clear preview cache</string>
+    <string name="preferences_activity.clear_preview_cache_summary">Clears cached image previews</string>
+    
+    <string name="preferences_activity.clear_thumb_cache_title">Clear thumbnail cache</string>
+    <string name="preferences_activity.clear_thumb_cache_summary">Clears cached thumbnail icons</string>
+    
+    <string name="preferences_activity.remove_device_title">@string/dialog.remove_device_title</string>
+    <string name="preferences_activity.remove_device_summary">Logs out and unlinks this device from U1</string>
+
+    
+    <string name="preferences_activity.category_manage">Manage</string>
+    
+    <string name="preferences_activity.manage_online_title">Manage in browser</string>
+    <string name="preferences_activity.u1_support_title">Ubuntu One support</string>
+    
+    
+    <string name="preferences_activity.category_application">Application</string>
+    
+    <string name="preferences_activity.send_feedback_title">Send feedback</string>
+    <string name="preferences_activity.report_problem_title">Report problem</string>
+    <string name="preferences_activity.about_title">About Ubuntu One Files</string>
+    
+    
+    <string name="preferences_activity.category_development">Development</string>
+    
+    <string name="preferences_activity.license_title">GNU Affero GPL v3</string>
+    <string name="preferences_activity.license_summary">This is open source software.</string>
+    
+    <string name="preferences_activity.changelog_title">Change log</string>
+    <string name="preferences_activity.changelog_summary">Review last changes</string>
+    
+    <string name="preferences_activity.authors_title">Authors</string>
+    <string name="preferences_activity.authors_summary">ubuntuone-android-hackers</string>
+    
+    <string name="preferences_activity.webpage_title">Project webpage</string>
+    <string name="preferences_activity.webpage_summary">ubuntuone-android-files</string>
+    
+    
+    <string name="preferences_activity.collect_logs_title">Collect logs</string>
+    <string name="preferences_activity.collect_logs_summary">Collect developer-friendly information</string>
+    
+    <string name="preferences_activity.review_logs_title">Review logs</string>
+    <string name="preferences_activity.review_logs_summary">You can review collected logs.</string>
+    
+    <string name="preferences_activity.send_logs_title">Send collected logs</string>
+    <string name="preferences_activity.send_logs_summary">Send logs to developers.</string>
+    
+    <string name="preferences_activity.we_happily_use">We happily use&#8230;</string>
+    
+    <string name="changelog.new_version_fmt">New version %1$s</string>
+    
+    
+    <!-- TODO karni: Cleanup! Place new strings above. -->
+    
+    <string name="cant_create_log">can\'t create log file</string>
+    <string name="cant_write_log">can\'t write to log file</string>
+    <string name="need_to_mount_storage">You need to mount the SD card first.</string>
+    <string name="no_text_viewer">You have no text viewer installed.</string>
+    <string name="logs_ready">Logs ready to be sent!</string>
+    <string name="send_logs_using">Send logs using:</string>
+    
+    <!-- Shortcuts -->
+    <string name="shortcut_type">Shortcut type</string>
+    <string name="shortcut_upload_media">Upload media</string>
+    <string name="shortcut_start">Start</string>
+    
+    <!-- Storage management -->
+    <!-- TODO karni: cleanup this section once implementation done -->
+    <string name="explain_configure_new_storage">Ah, a new SD card! This app can upload photos as soon as you take them, and you can also upload all existing photos. What would you like to upload? (You can change in preferences later.)</string>
+    <string name="btn_act_upload_all">Existing and future</string>
+    <string name="btn_act_upload_new_only">Future photos only</string>
+    <string name="btn_act_upload_none">None</string>
+
+    <string name="storage_management_title">Storage management</string>
+    
+    <string name="files_count_fmt">%1$d file(s)</string>
+    <string name="files_count_and_size_fmt">%1$d file(s), %2$s total</string>
+    
+    <string name="device_storage_info_header">Device storage info</string>
+    <string name="storage_available_title">Storage available</string>
+    <string name="free_out_of_fmt">"%1$s free out of %2$s"</string>
+    <string name="storage_used_title">Storage used by Ubuntu One</string>
+    
+    <string name="files_info_header">Files info</string>
+    <string name="files_in_cloud_title">Files in cloud</string>
+    <string name="synced_files_title">Synced files</string>
+    <string name="cached_files_title">Cached files</string>
+    
+    <string name="manage_storage_header">Manage</string>
+    <string name="refresh_stats_title">Refresh stats</string>
+    <string name="refresh_stats_summary">Tap here to refresh</string>
+    <string name="check_missing_files_title">Check missing files</string>
+    <string name="check_missing_files_summary">Rescan for physically missing files</string>
+    <string name="remove_cached_files_title">Remove cached files</string>
+    <string name="remove_cached_files_summary">Remove downloaded non-synced files</string>
+    <string name="limit_storage_title">Limit storage</string>
+    <string name="limit_storage_summary">Choose how much space can be used</string>
+    <string name="unselect_synced_title">Unselect synced</string>
+    <string name="unselect_synced_summary">Selectively stop file sync</string>
+    
+    <string name="refreshing_dialog_text">Refreshing&#8230;</string>
+    <string name="refreshing_canceled_toast_text">Refresh canceled.</string>
+    
+    <string name="checking_dialog_text">Checking&#8230;</string>
+    <string name="missing_files_count_fmt">%1$d files were missing</string>
+    
+    <string name="removing_dialog_text">Removing&#8230;</string>
+    
+    <string name="limit_storage_dialog_title">Limit storage</string>
+    <string name="limit_storage_dialog_text">Choose how much space can Ubuntu One Files use.</string>
+    <string name="limit_set_to_toast_fmt">Limit set to %1$s.</string>
+
+    <string name="storage_device_not_available">SD card is not available. Functionality is dimished.</string>
+    <string name="storage_is_not_accessible_not_setting_preference">Can\'t write to SD card, so not saving preference.</string>
+    
+    <!-- UpDown service -->
+    
+    <!-- Notifications -->
+    
+    <string name="uploading_file_n_of_n">Uploading file %1$d of %2$d</string>
+    <string name="downloading_file_n_of_n">Downloading file %1$d of %2$d</string>
+    <plurals name="uploaded_n_files">
+        <item quantity="one">Uploaded %d file.</item>
+        <item quantity="other">Uploaded %d files.</item>
+    </plurals>
+    <plurals name="downloaded_n_files">
+        <item quantity="one">Downloaded %d file.</item>
+        <item quantity="other">Downloaded %d files.</item>
+    </plurals>
+    <plurals name="failed_to_upload_n_files">
+        <item quantity="one">%d upload failed.</item>
+        <item quantity="other">%d uploads failed.</item>
+    </plurals>
+    <plurals name="failed_to_download_n_files">
+        <item quantity="one">%d download failed.</item>
+        <item quantity="other">%d downloads failed.</item>
+    </plurals>
+    
+    <string name="authproxy.authorize_access">Authorize access</string>
+    <string name="authproxy.description">The following application is requesting permission to access your Ubuntu One account:</string>
+    <string name="authproxy.learn_more">By allowing this application to access your Ubuntu One account, you give it permission to retrieve your basic information, such as name and email, and to make changes to the data you store in Ubuntu One.</string>
+    <string name="authproxy.question">Only allow access if you trust this application.</string>
+    <string name="authproxy.allow">Allow access</string>
+    <string name="authproxy.deny">Don\'t allow</string>
+    
+    <!-- Single Sign On -->
+    <string name="ubuntu_single_sign_on">Ubuntu Single Sign On</string>
+    <string name="label">Ubuntu One</string>
+    
+    <string name="ubuntuone_token_label">Files</string>
+    <string name="undefined">undefined</string>
+    
+    <string name="cancelled">Cancelled</string>
+    <string name="back">Back</string>
+    <string name="next">Next</string>
+    <string name="sign_in">Sign in</string>
+    
+    <string name="sign_in_or_up.have_an_account">I already have an Ubuntu Account</string>
+    <string name="sign_in_or_up.crate_account">I am new to Ubuntu One</string>
+    
+    <string name="introduction.sign_up_now">Sign up now</string>
+    
+    <string name="registration.sign_up">Sign up</string>
+    <string name="registration.sign_up_desc">Please provide a few details below to register for your Ubuntu One account.</string>
+    <string name="registration.full_name">Full name</string>
+    <string name="registration.email">Email</string>
+    <string name="registration.password">Password</string>
+    <string name="registration.password_desc">Must be at least 8 characters long and must contain at least one number and an upper case letter.</string>
+    <string name="registration.show_password">Show password</string>
+    <string name="registration.security">Security</string>
+    <string name="registration.loading_captcha">Loading captcha, please wait&#8230;</string>
+    <string name="registration.loading_captcha_failed">Oops! Touch here for new image.</string>
+    <string name="registration.cant_read">(Can\'t read? Touch the image.)</string>
+    <string name="registration.solution">Type the two words:</string>
+    
+    <string name="registration.congratulations">Congratulations</string>
+    <string name="registration.check_mail">A confirmation email has been sent to the address you provided.\nSimply follow the link in the email to activate your Ubuntu One account.</string>
+    <string name="registration.almost_there">Almost there!</string>
+    <string name="registration.please_wait">Please wait…</string>
+    
+    <string name="authentication.email">@string/registration.email</string>
+    <string name="authentication.password">@string/registration.password</string>
+    <string name="authentication.sign_in">Sign in</string>
+    
+    <string name="sso.fullname_invalid">Name can\'t be empty.</string>
+    <string name="sso.username_invalid">Invalid username (email).</string>
+    <string name="sso.password_invalid">Password must be at least 8 characters long, contain one upper case letter and one digit.</string>
+    <string name="sso.only_one_supported">Currently only one Ubuntu One account is supported. If you wish to sign in as a different user, please remove the old account first.</string>
+    
+    <string name="add_ubuntu_account">Add Ubuntu Account</string>
+    
+    <string name="opening_browser_to_sign_up">Opening browser to sign up&#8230;</string>
+    <string name="signup_header">Sign up:</string>
+    <string name="signup_footer_tos">"By creating an account you agree to the&lt;br />Ubuntu Account &lt;a href=&quot;http://ubuntu.com/legal&quot;&gt;Terms of Service&lt;/a&gt;."</string>
+    
+    <string name="getting_captcha">Getting captcha&#8230;</string>
+    <string name="getting_captcha_failed">Failed to get captcha!</string>
+    <string name="tap_to_change_captcha">Tap here to change captcha.</string>
+    <string name="solution">Captcha solution</string>
+    <string name="solution_cannot_be_empty">You must fill in the captcha solution.</string>
+    
+    <string name="signing_up_header">Signing up&#8230;</string>
+    
+    <string name="check_email_message">Please check your email and paste the token below. You can use your Home button to leave this screen.</string>
+    <string name="paste_token_hint">Paste email token here</string>
+    <string name="please_paste_the_token">Please paste the token sent to your email.</string>
+    <string name="completing_registration">Completing registration&#8230;</string>
+    
+    <string name="oops_header">Oops</string>
+    
+    <string name="cancelled_signing_up">Cancelled creating account!</string>
+    <string name="failed_to_create_account">Failed to create account. Please try again.</string>
+    
+    <string name="login_header">Log in:</string>
+    <string name="login_subheader">Please note that if you\'ve registered with Launchpad you can use your existing Launchpad credentials to log in.</string>
+    <string name="login_footer_tos">By signing in, you agree to the&lt;br />Ubuntu Account &lt;a href=\"http://ubuntu.com/legal\">Terms of Service&lt;/a>.</string>
+    
+    <string name="logging_in_header">Logging in&#8230;</string>
+    
+    <string name="logged_in_header">Logged in</string>
+    <string name="logged_in_message">You have successfully logged in! Press OK to close this wizard.</string>
+    <string name="cancelled_logging_in">Cancelled logging in!</string>
+    <string name="failed_to_log_in">Failed to log in. Please try again.</string>
+    
+    <!-- exceptions -->
+    <string name="authentication_error">Authentication failed. Probably credentials you have provided are incorrect.</string>
+    <string name="connectivity_error">Connection is down or service is unavailable. Please try again later.</string>
+</resources>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+	android:title="@string/preferences_activity.title">
+	
+	<PreferenceCategory
+		android:key="account"
+		android:title="@string/preferences_activity.category_account" >
+		
+		<Preference
+			android:key="username"
+			android:persistent="true"
+			android:enabled="false"
+			android:title="@string/preferences_activity.username_title"
+			android:summary="@string/preferences_activity.unknown_value" />
+		<Preference
+			android:key="plan"
+			android:persistent="true"
+			android:enabled="false"
+			android:title="@string/preferences_activity.plan_title"
+			android:summary="@string/preferences_activity.unknown_value" />
+		<Preference
+		    android:key="invite_friend"
+		    android:title="@string/preferences_activity.invite_friend_title"
+		    android:summary="@string/preferences_activity.invite_friend_summary" />
+		<Preference
+			android:key="purchase_storage"
+			android:title="@string/preferences_activity.purchase_storage_title"
+			android:summary="@string/preferences_activity.purchase_storage_summary" />
+		<Preference
+			android:key="upgrade_plan"
+			android:title="@string/preferences_activity.upgrade_plan_title"
+			android:summary="@string/preferences_activity.upgrade_plan_summary" />
+			
+	</PreferenceCategory>
+	
+	<PreferenceCategory
+		android:key="options"
+		android:title="@string/preferences_activity.category_options" >
+		
+		<PreferenceScreen
+			android:key="media_upload"
+			android:title="@string/preferences_activity.auto_upload_settings_title" >
+			
+			<PreferenceCategory
+				android:title="@string/preferences_activity.category_photos" >
+				<CheckBoxPreference
+					android:key="upload_photos"
+					android:persistent="true"
+					android:defaultValue="true"
+					android:title="@string/preferences_activity.photo_auto_upload_title" />
+				<CheckBoxPreference
+				    android:key="use_wifi_only"
+					android:persistent="true"
+					android:defaultValue="false"
+					android:dependency="upload_photos"
+					android:title="@string/preferences_activity.only_on_wifi_title" />
+				<CheckBoxPreference
+				    android:key="only_when_charging"
+					android:persistent="true"
+					android:defaultValue="false"
+					android:dependency="upload_photos"
+					android:title="@string/preferences_activity.only_when_charging_title" />
+				<CheckBoxPreference
+				    android:key="also_when_roaming"
+					android:persistent="true"
+					android:defaultValue="false"
+					android:summary="Roaming uploads may cost you money."
+					android:dependency="upload_photos"
+					android:title="@string/preferences_activity.also_when_roaming" />
+				<CheckBoxPreference
+				    android:key="show_auto_upload_notifications"
+					android:persistent="true"
+					android:defaultValue="false"
+					android:dependency="upload_photos"
+					android:title="@string/preferences_activity.show_auto_upload_notifications" />
+				<Preference
+					android:key="upload_photos_dir"
+					android:persistent="true"
+					android:dependency="upload_photos"
+					android:title="@string/preferences_activity.photo_auto_upload_directory_title" />
+				<Preference
+					android:key="upload_photos_src"
+					android:dependency="upload_photos"
+					android:title="@string/preferences_activity.photo_auto_upload_sources_title" />
+				<Preference
+					android:key="upload_photos_now"
+					android:dependency="upload_photos"
+					android:title="@string/preferences_activity.upload_all_photos_title" />
+				<Preference
+				    android:key="cancel_all_uploads"
+				    android:dependency="upload_photos"
+				    android:title="@string/preferences_activity.cancel_all_uploads" />
+			</PreferenceCategory>
+			
+		</PreferenceScreen>
+		
+		<Preference
+			android:key="retry_failed"
+			android:enabled="false"
+			android:title="@string/preferences_activity.retry_failed_uploads_title"
+			android:summary="@string/preferences_activity.retry_failed_uploads_summary_none" />
+			
+		<Preference
+			android:key="cancel_failed"
+			android:enabled="false"
+			android:title="@string/preferences_activity.cancel_failed_uploads_title" />
+		
+		<PreferenceScreen
+			android:key="advanced_options"
+			android:title="@string/preferences_activity.advanced_options_title" >
+			
+			<CheckBoxPreference
+				android:key="auto_retry_failed"
+				android:persistent="true"
+				android:defaultValue="true"
+				android:title="@string/preferences_activity.auto_retry_title"
+				android:summary="@string/preferences_activity.auto_retry_summary" />
+			<Preference
+			    android:key="clear_preview_cache"
+			    android:title="@string/preferences_activity.clear_preview_cache_title"
+			    android:summary="@string/preferences_activity.clear_preview_cache_summary" />
+			<Preference
+			    android:key="clear_thumb_cache"
+			    android:title="@string/preferences_activity.clear_thumb_cache_title"
+			    android:summary="@string/preferences_activity.clear_thumb_cache_summary" />
+			<Preference
+				android:key="remove_device"
+				android:title="@string/preferences_activity.remove_device_title"
+				android:summary="@string/preferences_activity.remove_device_summary" />
+			
+		</PreferenceScreen>
+
+	</PreferenceCategory>
+	
+	<PreferenceCategory
+		android:key="manage"
+		android:title="@string/preferences_activity.category_manage" >
+		
+		<Preference
+			android:key="manage_online"
+			android:title="@string/preferences_activity.manage_online_title" />
+		<Preference
+			android:key="support_options"
+			android:title="@string/preferences_activity.u1_support_title" />
+
+	</PreferenceCategory>
+	
+	<PreferenceCategory
+		android:key="application"
+		android:title="@string/preferences_activity.category_application" >
+		
+		<Preference
+			android:key="feedback"
+			android:title="@string/preferences_activity.send_feedback_title" />
+		
+		<PreferenceScreen
+			android:key="report_problem"
+			android:enabled="true"
+			android:title="@string/preferences_activity.report_problem_title" >
+					
+			<CheckBoxPreference
+				android:key="collect_logs"
+				android:title="@string/preferences_activity.collect_logs_title"
+				android:summary="@string/preferences_activity.collect_logs_summary" />
+				
+			<Preference
+				android:key="review_logs"
+				android:dependency="collect_logs"
+				android:title="@string/preferences_activity.review_logs_title"
+				android:summary="@string/preferences_activity.review_logs_summary" />
+			
+			<Preference
+				android:key="send_logs"
+				android:dependency="collect_logs"
+				android:title="@string/preferences_activity.send_logs_title"
+				android:summary="@string/preferences_activity.send_logs_summary" />
+			
+		</PreferenceScreen>
+		
+		<PreferenceScreen
+			android:title="@string/preferences_activity.about_title"
+			android:key="about" >
+			
+			<PreferenceCategory
+				android:key="development"
+				android:title="@string/preferences_activity.category_development" >
+				
+				<Preference
+					android:key="license"
+					android:title="@string/preferences_activity.license_title"
+					android:summary="@string/preferences_activity.license_summary" />
+					
+				<Preference
+					android:key="changelog"
+					android:title="@string/preferences_activity.changelog_title"
+					android:summary="@string/preferences_activity.changelog_summary" />
+					
+				<Preference
+					android:key="authors"
+					android:title="@string/preferences_activity.authors_title"
+					android:summary="@string/preferences_activity.authors_summary" />
+					
+				<Preference
+					android:key="webpage"
+					android:title="@string/preferences_activity.webpage_title"
+					android:summary="@string/preferences_activity.webpage_summary" />
+				
+			</PreferenceCategory>
+			
+			<PreferenceCategory
+				android:key="details"
+				android:title="@string/preferences_activity.we_happily_use" >
+				
+				<Preference
+					android:key="greendroid"
+					android:title="GreenDroid" />
+				
+			</PreferenceCategory>
+			
+		</PreferenceScreen>
+	
+	</PreferenceCategory>
+	
+</PreferenceScreen>
